@@ -57,8 +57,18 @@
 #include "libsaio.h"
 #include "bootstruct.h"
 #include <sys/md5.h>
-#include <uuid/uuid.h>
-#include <Kernel/uuid/namespace.h>
+
+/* The header file uuid.h is not used */
+// #include <uuid/uuid.h>
+
+/* I don't know how to link this file */
+// #include <Kernel/uuid/namespace.h>
+
+/* Taken from Libc-391.5.18/uuid/namespace.h */
+static unsigned char kFSUUIDNamespaceSHA1[] = 
+{ 
+    0xB3, 0xE2, 0x0F, 0x39, 0xF2, 0x92, 0x11, 0xD6, 0x97, 0xA4, 0x00, 0x30, 0x65, 0x43, 0xEC, 0xAC 
+};
 
 struct devsw {
     const char *  name;

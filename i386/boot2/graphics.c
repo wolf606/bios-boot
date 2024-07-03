@@ -626,7 +626,7 @@ void drawDataRectangle( unsigned short  x,
 static void
 setBorderColor( unsigned char  colorIndex )
 {
-    long   color = lookUpCLUTIndex( colorIndex, 32 );
+    //long   color = lookUpCLUTIndex( colorIndex, 32 ); Not used
     VBEInfoBlock     vbeInfo;
     int              err;
 
