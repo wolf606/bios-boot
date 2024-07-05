@@ -1,7 +1,7 @@
 
 # bios-boot
 
-The Legacy BIOS bootloader from Mac OS X Tiger 10.4.8. Might plan on rewriting it so that it compiles on the latest macOS release.
+The Legacy BIOS bootloader from Mac OS X Tiger 10.4.8: **boot** version 132. Might plan on rewriting it so that it compiles on the latest macOS release.
 
 ## Building
 
